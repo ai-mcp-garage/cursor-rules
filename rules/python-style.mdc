@@ -1,3 +1,9 @@
+---
+description: Python code style — type hints, naming, structure, imports, docstrings
+globs: ["**/*.py"]
+alwaysApply: false
+---
+
 # Python Code Style
 
 ## Type Hints

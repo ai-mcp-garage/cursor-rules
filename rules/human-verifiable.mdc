@@ -1,3 +1,8 @@
+---
+description: Write code that can be read, run, and verified in small steps
+alwaysApply: false
+---
+
 # Human-Verifiable Code
 
 Write code that can be read, run, and verified in small steps.

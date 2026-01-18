@@ -1,3 +1,8 @@
+---
+description: Build only what's needed — avoid premature abstraction and unnecessary complexity
+alwaysApply: false
+---
+
 # Simplicity First
 
 Build only what's needed.

@@ -1,3 +1,9 @@
+---
+description: Use uv for Python project setup and dependency management
+globs: ["**/pyproject.toml", "**/*.py"]
+alwaysApply: false
+---
+
 # Python UV Setup
 
 Use `uv` for all Python project setup and dependency management.
