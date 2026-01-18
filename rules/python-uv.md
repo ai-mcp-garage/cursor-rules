@@ -1,0 +1,48 @@
+# Python UV Setup
+
+Use `uv` for all Python project setup and dependency management.
+
+## New Projects
+
+```bash
+mkdir my-project && cd my-project
+uv init
+uv venv
+```
+
+## Dependencies
+
+```bash
+uv add requests           # Add dependency
+uv add --dev pytest       # Dev dependency
+uv sync                   # Install all
+```
+
+## Running Code
+
+Always use `uv run` — no manual venv activation:
+
+```bash
+uv run python script.py
+uv run python -m mypackage
+```
+
+## pyproject.toml
+
+```toml
+[project]
+name = "my-project"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+```
+
+## Notes
+
+- Faster than pip, better resolution
+- Commit `uv.lock` for reproducible builds
+- No venv activation needed

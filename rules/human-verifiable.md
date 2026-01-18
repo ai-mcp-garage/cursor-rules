@@ -1,0 +1,30 @@
+# Human-Verifiable Code
+
+Write code that can be read, run, and verified in small steps.
+
+## Small Steps
+
+- Each change should be runnable and checkable
+- Don't batch changes before testing
+- If something breaks, you know what caused it
+
+## Verification Pattern
+
+After each step:
+1. Can I run this?
+2. Can I see it working?
+3. Does the output make sense?
+
+If any answer is "no," fix that before moving on.
+
+## Naming
+
+- Descriptive over short: `user_email` not `ue`
+- Functions say what they do: `fetch_user_data()` not `process()`
+- Variables say what they hold: `api_response` not `r`
+
+## Control Flow
+
+- Avoid deep nesting (2-3 levels max)
+- Early returns over nested conditionals
+- Flat is better than nested
